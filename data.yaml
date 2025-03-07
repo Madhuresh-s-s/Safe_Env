@@ -1,0 +1,7 @@
+
+path: D:\uyir\objectDetection\custom-dataset
+train: D:\uyir\objectDetection\custom-dataset\train\images
+val: D:\uyir\objectDetection\custom-dataset\val\images
+
+nc: 9 # Replace with the number of classes
+names: ['Car', 'Pedestrian', 'Van', 'Cyclist', 'Truck', 'Misc', 'Tram', 'Person_sitting', 'DontCare']  # Replace with your class names
