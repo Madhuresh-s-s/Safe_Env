@@ -1,6 +1,6 @@
 # Safe_Env
 
-![Project Logo]([your-logo-url](https://www.google.com/imgres?q=safe%20env%20car%20logo%20&imgurl=https%3A%2F%2Fbanner2.cleanpng.com%2F20180824%2Fau%2Fkisspng-car-motor-vehicle-service-tire-tyre-safety-good-cartridge-5b7fcacd1e7539.4859850315351016451248.jpg&imgrefurl=https%3A%2F%2Fwww.cleanpng.com%2Fpng-car-motor-vehicle-service-tire-tyre-safety-good-ca-6361336%2F&docid=vRhd_dAUHw0u_M&tbnid=KjuA4hkfuQYLwM&vet=12ahUKEwiwmePbnviLAxV7yDgGHeeVHAQQM3oECGsQAA..i&w=900&h=500&hcb=2&ved=2ahUKEwiwmePbnviLAxV7yDgGHeeVHAQQM3oECGsQAA))
+![Project Logo](assets/logo.png)
 
 # AI-Powered Real-Time Road Hazard Detection & Vehicle-to-Vehicle (V2V) Alert System
 
@@ -16,7 +16,7 @@
 - [Usage](#usage)
 - [Dependencies](#dependencies)
 - [Contributing](#contributing)
-- [License](#license)
+- [Demo](#demo)
 - [Acknowledgments](#acknowledgments)
 
 ---
@@ -148,9 +148,17 @@ We welcome contributions! Follow these steps:
 
 ---
 
-## 📜 License
+## 🎥 Demo
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+### 📹 **Demo Video**
+<video width="600" controls>
+  <source src="assets/demovid.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+### 🖼️ **Project Images**
+![Project Image 1](assets/demo1.jpg)
+![Project Image 2](assets/demo2.jpg)
 
 ---
 
