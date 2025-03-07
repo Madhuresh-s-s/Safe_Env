@@ -150,9 +150,6 @@ We welcome contributions! Follow these steps:
 
 ## 🎥 Demo
 
-### 📹 **Demo Video**
-[![Watch the Demo](assets/demo1.jpg)](https://your-video-link.com)
-
 ### 🖼️ **Project Images**
 ![Project Image 1](assets/demo1.jpg)
 ![Project Image 2](assets/demo2.jpg)
