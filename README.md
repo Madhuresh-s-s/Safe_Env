@@ -10,14 +10,14 @@
 
 ## 📖 Table of Contents
 
-- [Features](#features)
-- [Architecture](#architecture)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Dependencies](#dependencies)
-- [Contributing](#contributing)
-- [Demo](#demo)
-- [Acknowledgments](#acknowledgments)
+- [✅ Features](#-features)
+- [🏗️ Architecture](#%EF%B8%8F-architecture)
+- [🚀 Getting Started](#-getting-started)
+- [🔧 Usage](#-usage)
+- [📦 Dependencies](#-dependencies)
+- [🤝 Contributing](#-contributing)
+- [🎥 Demo](#-demo)
+- [🙌 Acknowledgments](#-acknowledgments)
 
 ---
 
@@ -151,10 +151,7 @@ We welcome contributions! Follow these steps:
 ## 🎥 Demo
 
 ### 📹 **Demo Video**
-<video width="600" controls>
-  <source src="assets/demovid.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[![Watch the Demo](assets/demo1.jpg)](https://your-video-link.com)
 
 ### 🖼️ **Project Images**
 ![Project Image 1](assets/demo1.jpg)
