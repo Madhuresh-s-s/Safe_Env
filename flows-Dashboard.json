@@ -1,0 +1,798 @@
+[
+    {
+        "id": "9c02140248999ff4",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c703aa849fb22064",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "4b72f6ee15d7e81d",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "de57ea1ad73b9729",
+        "type": "ui-page",
+        "name": "Overview",
+        "ui": "c703aa849fb22064",
+        "path": "/page2",
+        "icon": "mdi-home",
+        "layout": "grid",
+        "theme": "4b72f6ee15d7e81d",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "6ef3a56ba2e6c55c",
+        "type": "ui-page",
+        "name": "Accident",
+        "ui": "c703aa849fb22064",
+        "path": "/page3",
+        "icon": "mdi-car-crash",
+        "layout": "grid",
+        "theme": "4b72f6ee15d7e81d",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 2,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "b986d6b824d3fb73",
+        "type": "ui-page",
+        "name": "Infrastructure",
+        "ui": "c703aa849fb22064",
+        "path": "/page4",
+        "icon": "mdi-road-variant",
+        "layout": "grid",
+        "theme": "4b72f6ee15d7e81d",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 3,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "57f2b6819d3a866e",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "10.88.15.124",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "dfd3de01803405e5",
+        "type": "ui-group",
+        "name": "General Vehicle Info",
+        "page": "de57ea1ad73b9729",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "113460c6a53f2048",
+        "type": "ui-group",
+        "name": "Accident Alerts",
+        "page": "6ef3a56ba2e6c55c",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "73050d4d5d9d05e4",
+        "type": "ui-group",
+        "name": "Infrastructure",
+        "page": "b986d6b824d3fb73",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "35d3aab6a940509c",
+        "type": "ui-page",
+        "name": "Live Map",
+        "ui": "c703aa849fb22064",
+        "path": "/page5",
+        "icon": "mdi-map",
+        "layout": "grid",
+        "theme": "4b72f6ee15d7e81d",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 4,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "d08739eee8d0e0fe",
+        "type": "ui-group",
+        "name": "Map View",
+        "page": "35d3aab6a940509c",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "2103ac75bf8a0a02",
+        "type": "mqtt in",
+        "z": "9c02140248999ff4",
+        "name": "",
+        "topic": "detection/general",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "57f2b6819d3a866e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 780,
+        "y": 160,
+        "wires": [
+            [
+                "5dddc5c57f20aea7",
+                "c4a898fa2f771a47"
+            ]
+        ]
+    },
+    {
+        "id": "5dddc5c57f20aea7",
+        "type": "change",
+        "z": "9c02140248999ff4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.class",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 820,
+        "y": 340,
+        "wires": [
+            [
+                "5933b63f3819dc54"
+            ]
+        ]
+    },
+    {
+        "id": "c4a898fa2f771a47",
+        "type": "change",
+        "z": "9c02140248999ff4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.speed",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 780,
+        "y": 440,
+        "wires": [
+            [
+                "0615dfd8d4d5b281"
+            ]
+        ]
+    },
+    {
+        "id": "5933b63f3819dc54",
+        "type": "ui-text",
+        "z": "9c02140248999ff4",
+        "group": "dfd3de01803405e5",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "General Vehicle Info",
+        "label": "Vehicle Class",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payloads",
+        "valueType": "msg",
+        "x": 980,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "0615dfd8d4d5b281",
+        "type": "ui-gauge",
+        "z": "9c02140248999ff4",
+        "name": "Vehicle Speed",
+        "group": "dfd3de01803405e5",
+        "order": 1,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Vehcle Speeed",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "Km/h",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "40",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "70",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 880,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "751322ea153b127d",
+        "type": "mqtt in",
+        "z": "9c02140248999ff4",
+        "name": "",
+        "topic": "detection/accident",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "57f2b6819d3a866e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 790,
+        "y": 720,
+        "wires": [
+            [
+                "15ab433724057f36"
+            ]
+        ]
+    },
+    {
+        "id": "207a3ab2dd3671dd",
+        "type": "mqtt in",
+        "z": "9c02140248999ff4",
+        "name": "",
+        "topic": "detection/pothole_speedbump",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "57f2b6819d3a866e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1200,
+        "y": 600,
+        "wires": [
+            [
+                "567760491bf7257e"
+            ]
+        ]
+    },
+    {
+        "id": "8ad350a85461e188",
+        "type": "ui-table",
+        "z": "9c02140248999ff4",
+        "group": "113460c6a53f2048",
+        "name": "Accident Log",
+        "label": "Accident Log",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "maxrows": 0,
+        "passthru": false,
+        "autocols": true,
+        "showSearch": true,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "append",
+        "className": "",
+        "x": 950,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "15ab433724057f36",
+        "type": "function",
+        "z": "9c02140248999ff4",
+        "name": "Build Accident List",
+        "func": "let accidents = context.get('accidentList') || [];\nlet newTimestamp = new Date().toLocaleTimeString(); // Timestamp from Node-RED\n\n// Data from Python: msg.payload.location, msg.payload.vehicle_id\nlet newAccident = {\n    \"Alert\": \"Accident Detected\",\n    \"Location\": msg.payload.location,\n    \"Vehicle\": msg.payload.vehicle_id,\n    \"Time\": newTimestamp\n};\n\n// --- De-duplication Check ---\nif (accidents.length > 0) {\n    let lastAccident = accidents[0];\n    \n    // Check if same location, from same vehicle, at the same time\n    if (lastAccident.Location === newAccident.Location &&\n        lastAccident.Vehicle === newAccident.Vehicle &&\n        lastAccident.Time === newAccident.Time) {\n        return null; // It's a duplicate\n    }\n}\n// --- End of Check ---\n\naccidents.unshift(newAccident);\n\nif (accidents.length > 20) {\n    accidents.pop();\n}\n\ncontext.set('accidentList', accidents);\n\nmsg.payload = accidents;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n// Get the list of accidents, or create an empty list if it doesn't exist\n",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 820,
+        "wires": [
+            [
+                "8ad350a85461e188"
+            ]
+        ]
+    },
+    {
+        "id": "567760491bf7257e",
+        "type": "function",
+        "z": "9c02140248999ff4",
+        "name": "Build Hazard List",
+        "func": "let hazards = context.get('hazardList') || [];\nlet newTimestamp = new Date().toLocaleTimeString(); // Timestamp from Node-RED\n\n// Data from Python: msg.payload.hazard, msg.payload.vehicle_id\nlet newHazard = {\n    \"Hazard\": msg.payload.hazard,\n    \"Vehicle\": msg.payload.vehicle_id,\n    \"Time\": newTimestamp\n};\n\n// --- De-duplication Check ---\nif (hazards.length > 0) {\n    let lastHazard = hazards[0];\n    \n    // Check if same hazard, from same vehicle, at the same time\n    if (lastHazard.Hazard === newHazard.Hazard &&\n        lastHazard.Vehicle === newHazard.Vehicle &&\n        lastHazard.Time === newHazard.Time) {\n        return null; // It's a duplicate\n    }\n}\n// --- End of Check ---\n\nhazards.unshift(newHazard);\n\nif (hazards.length > 20) {\n    hazards.pop();\n}\n\ncontext.set('hazardList', hazards);\n\nmsg.payload = hazards;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1530,
+        "y": 540,
+        "wires": [
+            [
+                "f4e6bfd5fd383aeb"
+            ]
+        ]
+    },
+    {
+        "id": "f4e6bfd5fd383aeb",
+        "type": "ui-table",
+        "z": "9c02140248999ff4",
+        "group": "73050d4d5d9d05e4",
+        "name": "Road Hazard List",
+        "label": "Road Hazards Log",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "maxrows": 0,
+        "passthru": false,
+        "autocols": true,
+        "showSearch": true,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "append",
+        "className": "",
+        "x": 1390,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ca9e584a53235128",
+        "type": "mqtt in",
+        "z": "9c02140248999ff4",
+        "name": "",
+        "topic": "ambulance/response",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "57f2b6819d3a866e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 490,
+        "y": 600,
+        "wires": [
+            [
+                "aaa3a2c66ea3d0ad"
+            ]
+        ]
+    },
+    {
+        "id": "373a34e23120e669",
+        "type": "mqtt out",
+        "z": "9c02140248999ff4",
+        "name": "",
+        "topic": "traffic/priority_route",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "57f2b6819d3a866e",
+        "x": 510,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "aaa3a2c66ea3d0ad",
+        "type": "change",
+        "z": "9c02140248999ff4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "\"PRIORITY ALERT: Ambulance \" & payload.ambulance_id & \" en route to \" & payload.location_name & \". Please clear the route.\"",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 660,
+        "wires": [
+            [
+                "373a34e23120e669"
+            ]
+        ]
+    },
+    {
+        "id": "fdbc84a157dbe93d",
+        "type": "mqtt in",
+        "z": "9c02140248999ff4",
+        "name": "",
+        "topic": "detection/accident",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "57f2b6819d3a866e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 750,
+        "y": 960,
+        "wires": [
+            [
+                "ddb7fbf3f7f3fbb4"
+            ]
+        ]
+    },
+    {
+        "id": "ddb7fbf3f7f3fbb4",
+        "type": "change",
+        "z": "9c02140248999ff4",
+        "name": "Format Accident for Map",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.location_data",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "payload.icon",
+                "pt": "msg",
+                "to": "car-crash",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 850,
+        "y": 1080,
+        "wires": [
+            [
+                "2efbb11811bd226c"
+            ]
+        ]
+    },
+    {
+        "id": "2efbb11811bd226c",
+        "type": "worldmap",
+        "z": "9c02140248999ff4",
+        "name": "Accident Map",
+        "lat": "10.805",
+        "lon": "78.685",
+        "zoom": "12",
+        "layer": "OSMG",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "show",
+        "layers": "show",
+        "panit": "false",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "false",
+        "coords": "none",
+        "showgrid": "false",
+        "showruler": "false",
+        "allowFileDrop": "false",
+        "path": "/worldmap",
+        "overlist": "DR,CO,RA,DN",
+        "maplist": "OSMG,OSMC,EsriC,EsriS,UKOS",
+        "mapname": "",
+        "mapurl": "",
+        "mapopt": "",
+        "mapwms": false,
+        "x": 1180,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "be70c078604a6543",
+        "type": "function",
+        "z": "9c02140248999ff4",
+        "name": "Create Route",
+        "func": "let start = msg.payload.start_location;\nlet end = msg.payload.end_location;\nlet amb_id = msg.payload.ambulance_id;\n\n// Create a marker for the ambulance's starting point\nlet ambulance_marker = {\n    name: amb_id,\n    lat: start.lat,\n    lon: start.lon,\n    icon: \"ambulance\",\n    layer: \"Ambulances\" // Put it on its own layer\n};\n\n// Create a route object (a red line)\nlet route = {\n    name: amb_id + \" Route to \" + end.name,\n    color: \"#FF0000\", // Red\n    lat: [start.lat, end.lat],\n    lon: [start.lon, end.lon]\n};\n\n// Send the ambulance marker first\nnode.send({payload: ambulance_marker});\n\n// Then send the route line\nmsg.payload = route;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 990,
+        "y": 1200,
+        "wires": [
+            [
+                "2efbb11811bd226c"
+            ]
+        ]
+    },
+    {
+        "id": "1f079209b3b582aa",
+        "type": "mqtt in",
+        "z": "9c02140248999ff4",
+        "name": "",
+        "topic": "ambulance/response",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "57f2b6819d3a866e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1410,
+        "y": 1040,
+        "wires": [
+            [
+                "be70c078604a6543"
+            ]
+        ]
+    },
+    {
+        "id": "a9ca677c622d462e",
+        "type": "ui-template",
+        "z": "9c02140248999ff4",
+        "group": "d08739eee8d0e0fe",
+        "page": "",
+        "ui": "",
+        "name": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<iframe style=\"width:100%; height:400px; border:none;\" src=\"http://10.88.15.124:1880/worldmap\">\n</iframe>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1400,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fecf9524c821c964",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "@flowfuse/node-red-dashboard": "1.29.0",
+            "node-red-contrib-web-worldmap": "5.5.2"
+        }
+    }
+]
